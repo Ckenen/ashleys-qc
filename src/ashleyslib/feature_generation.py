@@ -94,7 +94,7 @@ def get_wc_composition(total_window_collection_wc, total_window_collection, wind
             wc_difference.append(last_window - current_window)
         last_window = current_window
 
-        values.append(total_window_collection[i])
+        values.append(total_window_collection[i] - 1)
 
     if total == 0:
         zero_list = ['0.0'] * 10
