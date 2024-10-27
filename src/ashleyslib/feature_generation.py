@@ -35,7 +35,7 @@ def get_header(windows_list, use_statistics):
     feature_names = []
     regular_features = ['W10', 'W20', 'W30', 'W40', 'W50', 'W60', 'W70', 'W80', 'W90', 'W100', 'total']
     if use_statistics:
-        statistics_features = ['stdev', 'mean', 'n_stdev', 'n_mean']
+        statistics_features = ['stdev', 'mean', 'var', 'median', 'n_stdev', 'n_mean', 'n_var', 'n_median']
         regular_features = regular_features + statistics_features
     mb = 1000000
     for w in windows_list:
